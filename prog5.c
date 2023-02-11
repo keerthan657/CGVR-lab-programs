@@ -57,10 +57,11 @@ void divideGasket(struct point v1, struct point v2, struct point v3, struct poin
         struct point m34 = findMid(v3,v4);
         
         // draw sub-gaskets
+        // make sure order is same, or colors will get mixed
         divideGasket(v1,m12,m13,m14,niter-1);
-        divideGasket(v2,m12,m23,m24,niter-1);
-        divideGasket(v3,m23,m34,m13,niter-1);
-        divideGasket(v4,m14,m34,m24,niter-1);
+        divideGasket(m12,v2,m23,m24,niter-1);
+        divideGasket(m13,m23,v3,m34,niter-1);
+        divideGasket(m14,m24,m34,v4,niter-1);
     } else {
         drawGasket(v1,v2,v3,v4);
     }
