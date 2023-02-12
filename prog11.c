@@ -70,9 +70,9 @@ void display2()
     // do reflection - about line y=mx+c
     glPushMatrix();
     glTranslatef(0,c,0);
-    glRotatef(atan(float(m))*R2D, 0, 0, 1);
+    glRotatef(atan((float)(m))*R2D, 0, 0, 1);
     glScalef(1,-1,1);
-    glRotatef(-atan(float(m))*R2D, 0, 0, 1);
+    glRotatef(-atan((float)(m))*R2D, 0, 0, 1);
     glTranslatef(0,-c,0);
     
     glColor3f(0,0,1);
