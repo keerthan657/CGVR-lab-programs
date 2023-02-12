@@ -98,3 +98,9 @@ In case camera is set using  ```gluOrtho2D(0, WIDTH, 0, HEIGHT)```, use this to 
 
 ```drawLine(xglobal, HEIGHT-yglobal, x, HEIGHT-y);```
 
+### Edit 1: RV folks who are forced to use Visual Studio 2010
+Function calls to math functions like sqrt and sin,cos,tan may throw errors
+
+To fix this, do typecasting of the function arguments to float or double
+
+Example: instead of doing ```sqrt(x)```, use ```sqrt((float)x)```
