@@ -1,5 +1,5 @@
 /*
-Write a program toimplement the Cohen Sutherland line clipping algorithm. Make provision to specify the input for multiple lines, window for clipping and viewport for displaying the clipped image.
+Write a program toimplement the Liang barsky line clipping algorithm. Make provision to specify the input for multiple lines, window for clipping and viewport for displaying the clipped image.
 */
 
 #include<stdio.h>
@@ -7,11 +7,6 @@ Write a program toimplement the Cohen Sutherland line clipping algorithm. Make p
 
 #define WIDTH  500
 #define HEIGHT 500
-
-#define TOP 1
-#define BOTTOM 2
-#define RIGHT 4
-#define LEFT 8
 
 #define TRUE 1
 #define FALSE 0
